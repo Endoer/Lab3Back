@@ -1,0 +1,39 @@
+DELETE http://localhost:3030/products/2
+Accept: application/json
+###
+PUT http://localhost:3030/products/2
+Content-Type: application/json
+
+{
+  "name": "shifted",
+  "price": 4,
+  "categoryId": 1
+}
+
+###
+POST http://localhost:3030/products
+Content-Type: application/json
+
+{
+  "name": "tester3",
+  "price": 4,
+  "categoryId": 1
+}
+
+###
+GET http://localhost:3030/products?key=name&value=te
+Accept: application/json
+
+###
+GET http://localhost:3030/products/1
+Accept: application/json
+
+###
+GET http://localhost:3030/category
+Accept: application/json
+
+###
+GET http://localhost:3030/products
+Accept: application/json
+
+###
