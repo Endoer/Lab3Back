@@ -1,3 +1,20 @@
+GET http://localhost:3030/auth
+Content-Type: application/json
+
+{
+  "username": "Utkach",
+  "password": 228
+}
+###
+
+GET http://localhost:3030/auth
+Content-Type: application/json
+
+{
+  "username": "tester3",
+  "password": 4
+}
+###
 DELETE http://localhost:3030/products/2
 Accept: application/json
 ###
@@ -6,18 +23,17 @@ Content-Type: application/json
 
 {
   "name": "shifted",
-  "price": 4,
-  "categoryId": 1
+  "price": 4
 }
 
 ###
 POST http://localhost:3030/products
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlV0a2FjaCIsInBhc3N3b3JkIjoyMjgsImlhdCI6MTY4NTU0ODg2NywiZXhwIjoxNjg1NTQ5MDQ3fQ.Fp34cdm5mCymdXKYWYLuiNKpA5OfmGsXtuiTgByKJyg
 
 {
-  "name": "tester3",
-  "price": 4,
-  "categoryId": 1
+  "name": "NewProduct",
+  "price": 4
 }
 
 ###
